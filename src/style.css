@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #1e202a;
+}
+
+#app {
+  padding: 30px 5vw;
+}
+
+#app .big-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#app .lt-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#app h2 {
+  margin-top: 40px;
+  color: #63687e;
+}
+
+/*
+HEADER
+*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+header .title h1 {
+  font-size: 3rem;
+}
+
+header p {
+  color: #63687e;
+}
+
+header .btn-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .btn-radio p {
+  margin-right: 10px;
+  color: #63687e;
+}
+
+/*---------------------------------------------*/
+/*
+SWITCH BUTTON
+*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  /* Hide default HTML checkbox */
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #aeb3cb;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #1e202a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-image: -webkit-linear-gradient(left, #378fe6 0%, #3eda82 50%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*---------------------------------------------*/
+/*
+BIGCARDS
+*/
+.card {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 300px;
+  background-color: #f5f7ff;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  border-top: 4px solid #198ff5;
+  color: #63687e;
+}
+
+.card h1 {
+  font-size: 3rem;
+  color: #1e202a;
+  margin-top: 20px;
+}
+
+.card .follow {
+  text-transform: uppercase;
+  letter-spacing: 9px;
+}
+
+.card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 5px;
+  color: #29cc67;
+  margin-top: 10%;
+}
+
+.card .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .head p {
+  margin-left: 10px;
+}
+
+/*---------------------------------------------*/
+/*
+LITTLECARDS
+*/
+.group-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.card-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-control .card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-control .card-group .card-sm {
+  cursor: pointer;
+  margin-top: 40px;
+  height: 155px;
+  width: 300px;
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+.card-control .card-group .card-sm .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-control .card-group .card-sm .head p {
+  color: #8b97c6;
+}
+
+.card-control .card-group .card-sm .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.card-control .card-group .card-sm .numbers h1 {
+  color: #1e202a;
+}
+
+.card-control .card-group .card-sm .numbers span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #29cc67;
+}
+
+.card-control .card-group .card-sm .numbers span img {
+  height: 7px;
+  margin-right: 5px;
+  width: 9px;
+}
+
+.card-control .card-group .card-sm .numbers .arrow-down p {
+  color: red;
+}
+
+/*---------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
